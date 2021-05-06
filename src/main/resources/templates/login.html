@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<form id="formulario" th:action="@{/saludo}" th:object="${usuario}" method="post">
+			<p>Usuario <input th:field="*{email}" type="text" id="usuario"></p>
+			<p>Contraseña <input th:field="*{password}" type="password" id="contransenha"></p>
+			<p><input type="submit" name="send" value="Enviar"></p>
+		</form>
+	</body>
+</html>
